@@ -52,7 +52,7 @@ export const apiConnected = async (req, res)=>{
         await res.status(200).send(htmlContent);
 
     } catch (error) {
-        res.status(500).json({message : `Internal Server Error`});
+        res.status(500).json({message : `Internal Server Error. Trouble to connect Atlas IP Configuration..`});
     }
 }
 
